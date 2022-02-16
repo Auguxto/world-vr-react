@@ -16,7 +16,15 @@ import {
   Features,
   Feature,
   FIcon,
-  FName
+  FName,
+  Build,
+  BUser,
+  BDescription,
+  User,
+  Get,
+  GetTitle,
+  GetDescription,
+  GetButton
 } from './styles';
 
 const Home = () => {
@@ -70,6 +78,28 @@ const Home = () => {
             <FName>Making meetings and tours easier</FName>
           </Feature>
         </Features>
+        <Build>
+          <BUser>
+            <User src="/user.png" width={517} height={505} />
+          </BUser>
+          <BDescription>
+            <Title>
+              <TitlePrimary>Build</TitlePrimary> a whole new world
+              <Description>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                cursus ac ipsum sed rhoncus. Nam euismod auctor ipsum.
+              </Description>
+            </Title>
+          </BDescription>
+        </Build>
+        <Get>
+          <GetTitle>Get in touch with us</GetTitle>
+          <GetDescription>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus
+            ac ipsum sed rhoncus. Nam euismod auctor ipsum.
+          </GetDescription>
+          <GetButton href="/get">Click here</GetButton>
+        </Get>
       </Container>
     </>
   );
